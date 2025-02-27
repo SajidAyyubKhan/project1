@@ -2,38 +2,79 @@
 <html>
   <head>
     <title>Pata Nahin Kiya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     
-    <p>Select Department</p>
-    <select name="department" id="select-department">
-      <option value="">None</option>
-      <option value="computer-engineering">Computer Engineering</option>
-      <option value="mechanical-engineering">Mechanical Engineering</option>
-      <option value="artificial-intelligence-and-machine-learning">Artificial Intelligence and Machine Learning</option>
-    </select>
+    <div class="select-bar">
+      <div>
+        <p>Select Department:</p>
+        <select name="department" id="select-department" onclick="
+          selection();
+        ">
+          <option value="">None</option>
+          <option value="computer-engineering">Computer Engineering</option>
+          <option value="mechanical-engineering">Mechanical Engineering</option>
+          <option value="artificial-intelligence-and-machine-learning">Artificial Intelligence and Machine Learning</option>
+        </select>
+      </div>
 
-    <p>Select Acadimic Year</p>
-    <select name="acadimic-year" id="select-acadimic-year">
-      <option value="">None</option>
-      <option value="2023-2024">2023-2024</option>
-      <option value="2024-2025">2024-2025</option>
-      <option value="2025-2026">2025-2026</option>
-    </select>
-    
-    <p>Select Semester</p>
-    <select name="semester" id="select-semester">
-      <option value="">None</option>
-      <option value="1st-sem">1st SEM</option>
-      <option value="2nd-sem">2nd SEM</option>
-      <option value="3rd-sem">3rd SEM</option>
-      <option value="4th-sem">4th SEM</option>
-    </select>
+      <div>
+        <p>Select Academic Year:</p>
+        <select name="academic-year" id="select-academic-year" onclick="
+          selection();
+        ">
+          <option value="">None</option>
+          <option value="2023-2024">2023-2024</option>
+          <option value="2024-2025">2024-2025</option>
+          <option value="2025-2026">2025-2026</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Select Semester:</p>
+        <select name="semester" id="select-semester" onclick="
+          selection();
+        ">
+          <option value="">None</option>
+          <option value="1st-sem">1st SEM</option>
+          <option value="2nd-sem">2nd SEM</option>
+          <option value="3rd-sem">3rd SEM</option>
+          <option value="4th-sem">4th SEM</option>
+        </select>
+      </div>
+
+      <div>
+        <p>
+          Select Subject:
+        </p>
+        <select name="subject" id="select-subject" onclick="
+          selection();
+        ">
+          <option value="">None</option>
+          <option value="mathematics">Engineering Mathematics-IV</option>
+          <option value="aoa">Analysis of Algorithm</option>
+          <option value="dbms">Database Management System</option>
+          <option value="operating-system">Operating System</option>
+          <option value="microprocessor">Microprocessor</option>
+        </select>
+      </div>
+    </div>
     
     <a href="1st-page.html">
-      <button>
+      <button class="buttons" onclick="
+        nextButton();  
+      ">
         Next
       </button>
     </a>
+
+    <script src="scripts/index.js"></script>
   </body>
 </html>

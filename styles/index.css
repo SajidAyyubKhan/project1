@@ -1,0 +1,23 @@
+.select-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.select-bar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-bar div select {
+  padding: 4px 10px;
+  width: 440px;
+  border: none;
+  background-color: #80ED99;
+  border-radius: 2px;
+  margin-left: 20px;
+}
+

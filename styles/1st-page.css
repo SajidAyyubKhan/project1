@@ -1,0 +1,30 @@
+.heading {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  padding: 4px 10px;
+  column-gap: 10px;
+}
+
+.heading div,
+.course-outcome-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid black;
+}
+
+.heading div {
+  border: 1px solid black;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.course-outcome-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  padding: 4px 10px;
+  margin-bottom: 40px;
+}
